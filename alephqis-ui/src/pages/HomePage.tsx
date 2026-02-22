@@ -726,7 +726,7 @@ export function HomePage({
 
             {/* Copyright + links */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground mb-16">
-              <p>Copyright © 2025 BitQIS</p>
+              <p>Copyright © 2026 AlephQIS</p>
               <div className="flex items-center gap-6">
                 <button className="hover:text-primary transition-colors">Terms and Conditions</button>
                 <button className="hover:text-primary transition-colors">Privacy Policy</button>
@@ -740,7 +740,7 @@ export function HomePage({
             <div
               style={{ fontSize: '18vw', fontWeight: 800, opacity: 0.025, letterSpacing: '-0.03em', lineHeight: 1 }}
             >
-              <span className="text-foreground">Bit</span><span className="text-primary">QIS</span>
+              <span className="text-foreground">Aleph</span><span className="text-primary">QIS</span>
             </div>
           </div>
         </section>
