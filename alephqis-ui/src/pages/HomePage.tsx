@@ -738,7 +738,7 @@ export function HomePage({
           {/* Large watermark fade */}
           <div className="pointer-events-none select-none absolute bottom-0 left-0 right-0 flex items-end justify-center pb-8">
             <div
-              style={{ fontSize: '18vw', fontWeight: 800, opacity: 0.025, letterSpacing: '-0.03em', lineHeight: 1 }}
+              style={{ fontSize: '18vw', fontWeight: 800, opacity: 0.025, letterSpacing: '-0.03em', lineHeight: 2 }}
             >
               <span className="text-foreground">Aleph</span><span className="text-primary">QIS</span>
             </div>
