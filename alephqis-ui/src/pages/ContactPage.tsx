@@ -70,7 +70,7 @@ export function ContactPage({ onNavigateHome }: ContactPageProps) {
           <div
             style={{ fontSize: '18vw', fontWeight: 800, opacity: 0.025, letterSpacing: '-0.03em', lineHeight: 1 }}
           >
-            <span className="text-foreground">Bit</span><span className="text-primary">QIS</span>
+            <span className="text-foreground">Aleph</span><span className="text-primary">QIS</span>
           </div>
         </div>
       </section>
