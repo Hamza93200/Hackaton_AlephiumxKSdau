@@ -1,0 +1,37 @@
+{
+  "name": "BitQIS - Quantitative Investment Strategies",
+  "short_name": "BitQIS",
+  "description": "Institutional-grade quantitative investment strategies for digital assets",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#4169e1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/public/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/public/favicon-16x16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/public/favicon-32x32.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/public/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["finance", "business"],
+  "lang": "en-US",
+  "dir": "ltr"
+}

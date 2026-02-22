@@ -1,0 +1,186 @@
+{
+  "version": "v4.3.0",
+  "name": "QISFund",
+  "bytecode": "0506101e402c4051407d40b0010000000204d30e131c83ce00ce0102010000000103d3f88bb1c9a00002010000000103d3bc2e7f35a00102010001020013d3a38507ccb4ce02450c7b16000c330f7ba00017011600a10007160116005f010202020018d33b150e4cb4ce02450c7b16010c330d7b1600b11601aba00116012aa1010516001601a0006001030202001dd3dbfdc60cb4160045107b16010c330d7b1601a001320e7b1600b11601bda00116012ba1010616001601a00060",
+  "codeHash": "00ca3d9dc515ab571dffef7206cc2ecca1c6e46ffb079f034be7b0707dd089ce",
+  "fieldsSig": {
+    "names": [
+      "fundName",
+      "symbol",
+      "currentNav",
+      "totalSupply",
+      "admin"
+    ],
+    "types": [
+      "ByteVec",
+      "ByteVec",
+      "U256",
+      "U256",
+      "Address"
+    ],
+    "isMutable": [
+      false,
+      false,
+      true,
+      true,
+      false
+    ]
+  },
+  "eventsSig": [
+    {
+      "name": "SharesMinted",
+      "fieldNames": [
+        "to",
+        "amount",
+        "price"
+      ],
+      "fieldTypes": [
+        "Address",
+        "U256",
+        "U256"
+      ]
+    },
+    {
+      "name": "SharesBurned",
+      "fieldNames": [
+        "from",
+        "amount",
+        "navAtRedemption"
+      ],
+      "fieldTypes": [
+        "Address",
+        "U256",
+        "U256"
+      ]
+    },
+    {
+      "name": "NavUpdated",
+      "fieldNames": [
+        "oldNav",
+        "newNav"
+      ],
+      "fieldTypes": [
+        "U256",
+        "U256"
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "name": "getMetadata",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": [
+        "ByteVec",
+        "ByteVec"
+      ]
+    },
+    {
+      "name": "getNav",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": [
+        "U256"
+      ]
+    },
+    {
+      "name": "getTotalSupply",
+      "paramNames": [],
+      "paramTypes": [],
+      "paramIsMutable": [],
+      "returnTypes": [
+        "U256"
+      ]
+    },
+    {
+      "name": "updateNav",
+      "paramNames": [
+        "newNav"
+      ],
+      "paramTypes": [
+        "U256"
+      ],
+      "paramIsMutable": [
+        false
+      ],
+      "returnTypes": []
+    },
+    {
+      "name": "buyShares",
+      "paramNames": [
+        "investor",
+        "amount"
+      ],
+      "paramTypes": [
+        "Address",
+        "U256"
+      ],
+      "paramIsMutable": [
+        false,
+        false
+      ],
+      "returnTypes": []
+    },
+    {
+      "name": "sellShares",
+      "paramNames": [
+        "investor",
+        "amount"
+      ],
+      "paramTypes": [
+        "Address",
+        "U256"
+      ],
+      "paramIsMutable": [
+        false,
+        false
+      ],
+      "returnTypes": []
+    }
+  ],
+  "constants": [],
+  "enums": [
+    {
+      "name": "ErrorCodes",
+      "fields": [
+        {
+          "name": "AdminOnly",
+          "value": {
+            "type": "U256",
+            "value": "0"
+          }
+        },
+        {
+          "name": "ZeroAmount",
+          "value": {
+            "type": "U256",
+            "value": "1"
+          }
+        },
+        {
+          "name": "InsufficientSupply",
+          "value": {
+            "type": "U256",
+            "value": "2"
+          }
+        },
+        {
+          "name": "InvalidNav",
+          "value": {
+            "type": "U256",
+            "value": "3"
+          }
+        },
+        {
+          "name": "Unauthorized",
+          "value": {
+            "type": "U256",
+            "value": "4"
+          }
+        }
+      ]
+    }
+  ]
+}
