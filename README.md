@@ -27,7 +27,7 @@ To test the platform, use the provided demo accounts.
 **Crucial Requirement:** You must connect your Alephium wallet extension using a **Group 0** address to interact with the smart contracts.
 
 ### Admin Portal
-**Login:** `admin@alephqis.com` (Password: any)
+**Login:** `admin@alephqis.com` (Password: 123456)
 
 * **Connect Wallet:** Link your Group 0 Alephium wallet.
 * **Create Fund:** Deploys a new `QISFund` smart contract on the blockchain and mints the initial token supply.
@@ -35,7 +35,7 @@ To test the platform, use the provided demo accounts.
 * **Client Management:** Monitor total AUM and track individual client portfolios.
 
 ### Client Dashboard
-**Login:** `client@alephqis.com` (Password: any)
+**Login:** `Please click on "Create an account"`
 
 
 * **Connect Wallet:** Link your Group 0 wallet to enable trading.
