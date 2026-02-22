@@ -12,8 +12,32 @@ To compile the smart contracts, generate the artifacts, and start the UI automat
 Double-click on `run.bat` or run in terminal:
 ```cmd
 run.bat
+```
 
 **For Mac/Linux:**
 Double-click on `run.sh` or run in terminal:
-```bash
-bash run.sh
+```cmd
+run.sh
+```
+
+## UI Walkthrough & Testing Guide
+
+To test the platform, use the provided demo accounts. 
+
+**Crucial Requirement:** You must connect your Alephium wallet extension using a **Group 0** address to interact with the smart contracts.
+
+### Admin Portal
+**Login:** `admin@alephqis.com` (Password: any)
+
+* **Connect Wallet:** Link your Group 0 Alephium wallet.
+* **Create Fund:** Deploys a new `QISFund` smart contract on the blockchain and mints the initial token supply.
+* **Update NAV:** Modifies the fund's Net Asset Value (Price) by signing an on-chain transaction for total transparency.
+* **Client Management:** Monitor total AUM and track individual client portfolios.
+
+### Client Dashboard
+**Login:** `client@alephqis.com` (Password: any)
+
+* **Connect Wallet:** Link your Group 0 wallet to enable trading.
+* **Live Portfolio:** Track investments with real-time P&L calculations synced directly with the on-chain NAV.
+* **Trade (Buy/Sell):** Buy shares (mints tokens to your wallet) or Sell shares (burns tokens from your wallet). All trades require transaction signatures.
+* **On-Chain Verification:** Look for the live "Verified On-Chain" badge confirming the fund is backed by a deployed smart contract.
